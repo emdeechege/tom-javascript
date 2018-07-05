@@ -16,10 +16,26 @@ $(document).ready(function() {
     $("#div4").fadeOut();
     $("#div5").fadeOut("slow");
     $("#div6").fadeOut(3000);
-      });
-    });
+  });
+});
 $(document).ready(function() {
   $("#flip").click(function() {
-  $("#panel").slideDown("slow");
-    });
-      });
+    $("#panel").slideDown("slow");
+  });
+});
+$(document).ready(function() {
+  $("button#green").click(function() {
+    $("body").removeClass();
+    $("body").addClass("green-background");
+  });
+
+  $("button#yellow").click(function() {
+    $("body").removeClass();
+    $("body").addClass("yellow-background");
+  });
+
+  $("button#red").click(function() {
+    $("body").removeClass();
+    $("body").addClass("red-background");
+  });
+});
